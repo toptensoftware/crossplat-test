@@ -1,0 +1,33 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run (Windows)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "Build (Windows)",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/crossplat-test.win.dll",
+            "args": ["--dpimode:window"],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "enableStepFiltering": false
+        },
+        {
+            "name": "Run (OSX)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "Build (OSX)",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/crossplat-test.osx.dll",
+            "args": ["--dpimode:window"],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "enableStepFiltering": false
+        },
+
+    ]
+}
